@@ -1,17 +1,27 @@
-footer {
-  background-color: #313844;
+.footer {
+  background-color: #3E5879;
   padding: 20px 0;
-  margin-top: 30px;
-  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
-footer span {
-  color: green;
+footer span{
+  color: #8E1616;
   opacity: 1;
 }
-footer li {
-  margin-left: 30px;
+/* If you already have these styles, keep them */
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.light footer {
-  background-color: #fff;
-  color: #000;
+
+.links {
+  list-style: none;
+  gap: 20px;
+}
+
+.links li {
+  cursor: pointer;
 }

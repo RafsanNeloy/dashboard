@@ -11,12 +11,12 @@ const Home = () => {
         <div className='container'>
           <div className='heading flexSB'>
             <h3>DashBoard</h3>
-            <span>Adminto / DashBoard</span>
+            <span>TISHA PLASTIC / DashBoard</span>
           </div>
-          <Cards />
-          <Charts />
-          <User />
-          <TableData />
+          {/* <Cards /> */}
+          {/* <Charts /> */}
+          {/* <User /> */}
+          {/* <TableData /> */}
         </div>
       </section>
     </>

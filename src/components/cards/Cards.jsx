@@ -82,20 +82,7 @@ const Cards = () => {
             </div>
           </div>
         </div>
-        <div className='cardBox'>
-          <Common title='Sales Analytics' />
-          <div className='circle'>
-            <div className='batch row'>
-              <span>32%</span>
-              <TrendingUpIcon className='batchIcon' />
-            </div>
-            <div className='title row'>
-              <h1>8451</h1>
-              <p>Revenue today</p>
-            </div>
-          </div>
-          <Progress done='70' />
-        </div>
+       
         <div className='cardBox'>
           <Common title='Total Revenue' />
           <div className='circle'>

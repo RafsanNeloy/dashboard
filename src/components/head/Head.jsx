@@ -11,7 +11,7 @@ const Head = ({ dark, setMode }) => {
         <div className='container flexSB'>
           <div className='left'>
             <div className='logo'>
-              <img src='./assets/images/logo.png' alt='' />
+              <img src='./assets/images/log.png' alt='' />
             </div>
           </div>
           <div className='right flexCenter'>

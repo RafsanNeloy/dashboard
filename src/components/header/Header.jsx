@@ -28,19 +28,23 @@ const Header = ({ dark, setMode }) => {
               </li>
               <li>
                 <InvertColorsOutlinedIcon className='navIcon' />
-                <a href='/'>UI Elements</a>
+                <a href='/'>BILLS</a>
               </li>
               <li>
                 <GridViewOutlinedIcon className='navIcon' />
-                <a href='/'>Apps</a>
+                <a href='/'>CUSTOMERS</a>
               </li>
               <li>
                 <SupportOutlinedIcon className='navIcon' />
-                <a href='/'>Components</a>
+                <a href='/'>LOG IN</a>
               </li>
               <li>
                 <StyleOutlinedIcon className='navIcon' />
-                <a href='/'>Pages</a>
+                <a href='/'>PRODUCTS</a>
+              </li>
+              <li>
+                <StyleOutlinedIcon className='navIcon' />
+                <a href='/'>MAKE BILL</a>
               </li>
             </ul>
             <button className='toggle' onClick={() => setMobile(!Mobile)}>
