@@ -8,10 +8,23 @@ import SupportOutlinedIcon from "@mui/icons-material/SupportOutlined"
 import StyleOutlinedIcon from "@mui/icons-material/StyleOutlined"
 import MenuIcon from "@mui/icons-material/Menu"
 import CloseIcon from "@mui/icons-material/Close"
+import Login from "../login/login"
+import AccountCircleIcon from '@mui/icons-material/AccountCircle'
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
+import LoginOutlinedIcon from '@mui/icons-material/LoginOutlined'
+
 
 const Header = ({ dark, setMode }) => {
   // Toogle Menu
   const [Mobile, setMobile] = useState(false)
+  const [showLogin, setShowLogin] = useState(false)
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+
+  const handleLogout = () => {
+    setIsLoggedIn(false)
+    // Add any additional logout logic here
+  }
+
   return (
     <>
       <section className='header'>
@@ -35,8 +48,23 @@ const Header = ({ dark, setMode }) => {
                 <a href='/'>CUSTOMERS</a>
               </li>
               <li>
-                <SupportOutlinedIcon className='navIcon' />
-                <a href='/'>LOG IN</a>
+                {isLoggedIn ? (
+                  <div className="user-menu">
+                    <AccountCircleIcon className='navIcon' />
+                    <a href='#' onClick={(e) => {
+                      e.preventDefault()
+                      handleLogout()
+                    }}>LOGOUT</a>
+                  </div>
+                ) : (
+                  <>
+                    <PersonOutlineOutlinedIcon className='navIcon' />
+                    <a href='#' onClick={(e) => {
+                      e.preventDefault()
+                      setShowLogin(!showLogin)
+                    }}>LOG IN</a>
+                  </>
+                )}
               </li>
               <li>
                 <StyleOutlinedIcon className='navIcon' />
@@ -52,6 +80,7 @@ const Header = ({ dark, setMode }) => {
             </button>
           </div>
         </header>
+        {showLogin && <Login />}
       </section>
     </>
   )
