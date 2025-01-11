@@ -24,8 +24,8 @@ const Login = () => {
       
 
       <form action="#" className="login-form">
-        <InputField type="email" placeholder="Email address" icon="mail" />
-        <InputField type="password" placeholder="Password" icon="lock" />
+        <InputField type="email" placeholder="Email address" icon={<span className="material-icons">mail</span>} />
+        <InputField type="password" placeholder="Password" icon={<span className="material-icons">lock</span>} />
 
         <a href="#" className="forgot-password-link">Forgot password?</a>
         <button type="submit" className="login-button">Log In</button>

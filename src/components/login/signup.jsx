@@ -7,10 +7,10 @@ const Signup = ({ onToggle }) => {
       <h2 className="form-title">Sign up</h2>
 
       <form action="#" className="login-form">
-        <InputField type="text" placeholder="Full Name" icon="person" />
-        <InputField type="email" placeholder="Email address" icon="mail" />
-        <InputField type="password" placeholder="Password" icon="lock" />
-        <InputField type="password" placeholder="Confirm Password" icon="lock" />
+        <InputField type="text" placeholder="Full Name" icon={<span className="material-icons">person</span>} />
+        <InputField type="email" placeholder="Email address" icon={<span className="material-icons">mail</span>} />
+        <InputField type="password" placeholder="Password" icon={<span className="material-icons">lock</span>} />
+        <InputField type="password" placeholder="Confirm Password" icon={<span className="material-icons">lock</span>} />
 
         <button type="submit" className="login-button">Sign Up</button>
       </form>
