@@ -11,7 +11,8 @@ const Head = ({ dark, setMode }) => {
         <div className='container flexSB'>
           <div className='left'>
             <div className='logo'>
-              <img src='./assets/images/log.png' alt='' />
+              {/* <img src='./assets/images/log.png' alt='' /> */}
+              <h2>TISHA PLASTIC PRODUCTS</h2>
             </div>
           </div>
           <div className='right flexCenter'>
